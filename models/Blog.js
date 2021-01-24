@@ -13,6 +13,7 @@ const blogSchema = new Schema({
     required: true,
    
   },
+  photo :String,
   auther: {
     type: String,
     ref: 'User',
