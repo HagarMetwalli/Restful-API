@@ -4,7 +4,14 @@ const routes = require('./routes');
 const MONGODB_URI  = "mongodb+srv://Hagar83:Elhamd@@@@@Llh@cluster0.3etbv.mongodb.net/Nodedb"
 const app = express();
 
-mongoose.connect(MONGODB_URI, { useUnifiedTopology: true })
+
+
+mongoose.connect(MONGODB_URI,  {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+})
 .then(() => console.log('Database Connected Successfully'))
 .catch((err) => console.log(err));
 
