@@ -19,7 +19,6 @@ const userSchema = new Schema({
     maxLength: 140,
     required: true,
   },
-  photo: String,
 
   following: [{
        type: Schema.Types.ObjectId,
