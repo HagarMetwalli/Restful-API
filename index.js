@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes');
-const { MONGODB_URI } = process.env;
+const MONGODB_URI  = "mongodb+srv://Hagar83:Elhamd@@@@@Llh@cluster0.3etbv.mongodb.net/Nodedb"
 const app = express();
 
 mongoose.connect(MONGODB_URI, { useUnifiedTopology: true })
